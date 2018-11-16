@@ -1,0 +1,245 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{759BBA79-77D4-41FC-B143-FD739B22787D}</ProjectGuid>
+    <RootNamespace>libdxf</RootNamespace>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <IncludePath>$(SolutionDir)lib\iconv\include;$(IncludePath)</IncludePath>
+    <LibraryPath>$(SolutionDir)lib\inconv\lib;$(LibraryPath)</LibraryPath>
+    <IntDir>$(SolutionDir)build\$(ProjectName)\$(Platform)\$(Configuration)\</IntDir>
+    <OutDir>$(SolutionDir)$(Configuration)\</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <IncludePath>$(SolutionDir)lib\iconv\include;$(IncludePath)</IncludePath>
+    <LibraryPath>$(SolutionDir)lib\inconv\lib;$(LibraryPath)</LibraryPath>
+    <IntDir>$(SolutionDir)build\$(ProjectName)\$(Platform)\$(Configuration)\</IntDir>
+    <OutDir>$(SolutionDir)$(Configuration)\</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <IncludePath>$(SolutionDir)lib\iconv\include;$(IncludePath)</IncludePath>
+    <LibraryPath>$(SolutionDir)lib\inconv\lib;$(LibraryPath)</LibraryPath>
+    <IntDir>$(SolutionDir)build\$(ProjectName)\$(Platform)\$(Configuration)\</IntDir>
+    <OutDir>$(SolutionDir)$(Platform)\$(Configuration)\</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <IncludePath>$(SolutionDir)lib\iconv\include;$(IncludePath)</IncludePath>
+    <LibraryPath>$(SolutionDir)lib\inconv\lib;$(LibraryPath)</LibraryPath>
+    <IntDir>$(SolutionDir)build\$(ProjectName)\$(Platform)\$(Configuration)\</IntDir>
+    <OutDir>$(SolutionDir)$(Platform)\$(Configuration)\</OutDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="drw_3dface.h" />
+    <ClInclude Include="drw_arc.h" />
+    <ClInclude Include="drw_base.h" />
+    <ClInclude Include="drw_block.h" />
+    <ClInclude Include="drw_circle.h" />
+    <ClInclude Include="drw_classes.h" />
+    <ClInclude Include="drw_dimaligned.h" />
+    <ClInclude Include="drw_dimangular.h" />
+    <ClInclude Include="drw_dimangular3p.h" />
+    <ClInclude Include="drw_dimdiametric.h" />
+    <ClInclude Include="drw_dimension.h" />
+    <ClInclude Include="drw_dimlinear.h" />
+    <ClInclude Include="drw_dimordinate.h" />
+    <ClInclude Include="drw_dimradial.h" />
+    <ClInclude Include="drw_ellipse.h" />
+    <ClInclude Include="drw_entities.h" />
+    <ClInclude Include="drw_entity.h" />
+    <ClInclude Include="drw_hatch.h" />
+    <ClInclude Include="drw_header.h" />
+    <ClInclude Include="drw_image.h" />
+    <ClInclude Include="drw_insert.h" />
+    <ClInclude Include="drw_interface.h" />
+    <ClInclude Include="drw_leader.h" />
+    <ClInclude Include="drw_line.h" />
+    <ClInclude Include="drw_lwpolyline.h" />
+    <ClInclude Include="drw_mtext.h" />
+    <ClInclude Include="drw_objects.h" />
+    <ClInclude Include="drw_point.h" />
+    <ClInclude Include="drw_polyline.h" />
+    <ClInclude Include="drw_ray.h" />
+    <ClInclude Include="drw_solid.h" />
+    <ClInclude Include="drw_spline.h" />
+    <ClInclude Include="drw_text.h" />
+    <ClInclude Include="drw_trace.h" />
+    <ClInclude Include="drw_vertex.h" />
+    <ClInclude Include="drw_viewport.h" />
+    <ClInclude Include="drw_xline.h" />
+    <ClInclude Include="intern\drw_cptable932.h" />
+    <ClInclude Include="intern\drw_cptable936.h" />
+    <ClInclude Include="intern\drw_cptable949.h" />
+    <ClInclude Include="intern\drw_cptable950.h" />
+    <ClInclude Include="intern\drw_cptables.h" />
+    <ClInclude Include="intern\drw_dbg.h" />
+    <ClInclude Include="intern\drw_textcodec.h" />
+    <ClInclude Include="intern\dwgbuffer.h" />
+    <ClInclude Include="intern\dwgreader.h" />
+    <ClInclude Include="intern\dwgreader15.h" />
+    <ClInclude Include="intern\dwgreader18.h" />
+    <ClInclude Include="intern\dwgreader21.h" />
+    <ClInclude Include="intern\dwgreader24.h" />
+    <ClInclude Include="intern\dwgreader27.h" />
+    <ClInclude Include="intern\dwgutil.h" />
+    <ClInclude Include="intern\dxfreader.h" />
+    <ClInclude Include="intern\dxfwriter.h" />
+    <ClInclude Include="intern\rscodec.h" />
+    <ClInclude Include="libdwgr.h" />
+    <ClInclude Include="libdxfrw.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="drw_3dface.cpp" />
+    <ClCompile Include="drw_arc.cpp" />
+    <ClCompile Include="drw_block.cpp" />
+    <ClCompile Include="drw_circle.cpp" />
+    <ClCompile Include="drw_classes.cpp" />
+    <ClCompile Include="drw_dimaligned.cpp" />
+    <ClCompile Include="drw_dimangular.cpp" />
+    <ClCompile Include="drw_dimangular3p.cpp" />
+    <ClCompile Include="drw_dimdiametric.cpp" />
+    <ClCompile Include="drw_dimension.cpp" />
+    <ClCompile Include="drw_dimordinate.cpp" />
+    <ClCompile Include="drw_dimradial.cpp" />
+    <ClCompile Include="drw_ellipse.cpp" />
+    <ClCompile Include="drw_entity.cpp" />
+    <ClCompile Include="drw_hatch.cpp" />
+    <ClCompile Include="drw_header.cpp" />
+    <ClCompile Include="drw_image.cpp" />
+    <ClCompile Include="drw_insert.cpp" />
+    <ClCompile Include="drw_leader.cpp" />
+    <ClCompile Include="drw_line.cpp" />
+    <ClCompile Include="drw_lwpolyline.cpp" />
+    <ClCompile Include="drw_mtext.cpp" />
+    <ClCompile Include="drw_objects.cpp" />
+    <ClCompile Include="drw_point.cpp" />
+    <ClCompile Include="drw_polyline.cpp" />
+    <ClCompile Include="drw_ray.cpp" />
+    <ClCompile Include="drw_spline.cpp" />
+    <ClCompile Include="drw_text.cpp" />
+    <ClCompile Include="drw_trace.cpp" />
+    <ClCompile Include="drw_vertex.cpp" />
+    <ClCompile Include="drw_viewport.cpp" />
+    <ClCompile Include="intern\drw_dbg.cpp" />
+    <ClCompile Include="intern\drw_textcodec.cpp" />
+    <ClCompile Include="intern\dwgbuffer.cpp" />
+    <ClCompile Include="intern\dwgreader.cpp" />
+    <ClCompile Include="intern\dwgreader15.cpp" />
+    <ClCompile Include="intern\dwgreader18.cpp" />
+    <ClCompile Include="intern\dwgreader21.cpp" />
+    <ClCompile Include="intern\dwgreader24.cpp" />
+    <ClCompile Include="intern\dwgreader27.cpp" />
+    <ClCompile Include="intern\dwgutil.cpp" />
+    <ClCompile Include="intern\dxfreader.cpp" />
+    <ClCompile Include="intern\dxfwriter.cpp" />
+    <ClCompile Include="intern\rscodec.cpp" />
+    <ClCompile Include="libdwgr.cpp" />
+    <ClCompile Include="libdxfrw.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
