@@ -102,9 +102,6 @@
     <ClInclude Include="intern\dwgreader.h">
       <Filter>Header Files\intern</Filter>
     </ClInclude>
-    <ClInclude Include="drw_point.h">
-      <Filter>Header Files\entity</Filter>
-    </ClInclude>
     <ClInclude Include="drw_line.h">
       <Filter>Header Files\entity</Filter>
     </ClInclude>
@@ -198,6 +195,9 @@
     <ClInclude Include="drw_entities.h">
       <Filter>Header Files\entity</Filter>
     </ClInclude>
+    <ClInclude Include="drw_point.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="drw_classes.cpp">
@@ -255,9 +255,6 @@
       <Filter>Source Files\intern</Filter>
     </ClCompile>
     <ClCompile Include="drw_line.cpp">
-      <Filter>Source Files\entity</Filter>
-    </ClCompile>
-    <ClCompile Include="drw_point.cpp">
       <Filter>Source Files\entity</Filter>
     </ClCompile>
     <ClCompile Include="drw_circle.cpp">
@@ -337,6 +334,9 @@
     </ClCompile>
     <ClCompile Include="drw_entity.cpp">
       <Filter>Source Files\entity</Filter>
+    </ClCompile>
+    <ClCompile Include="drw_point.cpp">
+      <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
