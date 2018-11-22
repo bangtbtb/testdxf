@@ -70,7 +70,7 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <IncludePath>$(SolutionDir)lib\iconv\include;$(IncludePath)</IncludePath>
-    <LibraryPath>$(SolutionDir)lib\inconv\lib;$(LibraryPath)</LibraryPath>
+    <LibraryPath>$(LibraryPath)</LibraryPath>
     <IntDir>$(SolutionDir)build\$(ProjectName)\$(Platform)\$(Configuration)\</IntDir>
     <OutDir>$(SolutionDir)$(Configuration)\</OutDir>
   </PropertyGroup>

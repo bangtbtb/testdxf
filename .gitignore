@@ -4,3 +4,4 @@
 **/.vs
 *.db
 *.opendb
+**/test.dxf

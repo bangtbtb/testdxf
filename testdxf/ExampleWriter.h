@@ -1,25 +1,29 @@
+#ifndef _ENTITIES_CONTAINER_H_
+#define  _ENTITIES_CONTAINER_H_
+
 #include <drw_interface.h>
 #include <libdxfrw.h>
+#include <vector>
+#include <drw_entities.h>
 
-//
-// Created by R. van Twisk on 4/6/16.
-//
 
-#pragma once
 
 
 class ExampleWriter : public DRW_Interface {
 private:
-	dxfRW &dxfW;
+	dxfRW &_dxfW;
+	std::vector<DRW_Entity*> _entities;
 public:
 	ExampleWriter(dxfRW &dxfW);
 
 	virtual ~ExampleWriter() override {
-
+		for (auto it : _entities) {
+			delete it;
+		}
+		_entities.clear();
 	}
 
 	virtual void addHeader(const DRW_Header *data) override {
-
 	}
 
 	virtual void addLType(const DRW_LType &data) override {
@@ -163,7 +167,6 @@ public:
 	}
 
 	virtual void addViewport(const DRW_Viewport &data) override {
-
 	}
 
 	virtual void addImage(const DRW_Image *data) override {
@@ -215,4 +218,8 @@ public:
 	}
 
 	virtual void writeEntities() override;
+	
+	void addEntity(DRW_Entity *data) { _entities.push_back(data); }
 };
+
+#endif // !_ENTITIES_CONTAINER_H_

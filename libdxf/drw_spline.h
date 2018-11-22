@@ -17,7 +17,7 @@ public:
 		tolknot = tolcontrol = tolfit = 0.0000001;
 
 	}
-	~DRW_Spline() {
+	virtual ~DRW_Spline() {
 		while (!controllist.empty()) {
 			controllist.pop_back();
 		}

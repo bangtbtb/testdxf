@@ -1,3 +1,6 @@
+#ifndef _DRW_ENTITIES_ALL_H_
+#define  _DRW_ENTITIES_ALL_H_
+
 #include "drw_3dface.h"
 #include "drw_arc.h"
 #include "drw_block.h"
@@ -29,4 +32,9 @@
 #include "drw_vertex.h"
 #include "drw_viewport.h"
 #include "drw_xline.h"
+
+#endif // !_DRW_ENTITIES_ALL_H_
+
+
+
 
